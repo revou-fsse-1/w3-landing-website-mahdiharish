@@ -7,7 +7,7 @@
     <meta name="description" content="Website to show photos of things" />
     <meta name="keywords" content="HTML, CSS" />
     <meta name="author" content="Mahdi Harish Rahman" />
-    <title>Madang Hamburger</title>
+    <title>Madang Hamburger's Survey Page</title>
     <link rel="stylesheet" href="/index.css" />
     <link
       rel="apple-touch-icon"
@@ -37,15 +37,15 @@
         <ul class="nav-menu">
           <li><a>About</a></li>
           <li><a>Contact</a></li>
-          <li><a>Support</a></li>
+          <li><a>Feedback</a></li>
         </ul>
       </div>
     </nav>
     <header class="header">
       <h1>Madang Hamburger</h1>
       <p>
-        We are fans of hamburgers, and we also sell them for life! Tasty
-        hamburgers with juicy patties made with freshest ingredients!
+        Please write your feedback regarding our products below. We appreciate
+        your review and we strive to become the best.
       </p>
     </header>
     <section class="burger-photos">
@@ -66,13 +66,17 @@
       </div>
     </section>
     <section class="burger-reviews">
-      <h2>What's people say about our burger?</h2>
-      <div class="container">
+      <h2>Why we need your feedback?</h2>
+      <div class="container-1">
         <div class="card-item">
           <div class="image image1"></div>
           <div class="content">
-            <h2 class="title">Michal Kilmarnock</h2>
-            <p>It tastes so great and tasty! Best burger in town!</p>
+            <h2 class="title">Improving our products</h2>
+            <p>
+              We considers complaint created by customers, including any
+              suggestions to improve our products. We might inspired to make new
+              menu some day!
+            </p>
           </div>
         </div>
       </div>
@@ -80,8 +84,12 @@
         <div class="card-item">
           <div class="image image2"></div>
           <div class="content">
-            <h2 class="title">Windah Basudara</h2>
-            <p>I love their patties, so juicy and melts in my mouth!</p>
+            <h2 class="title">Improving our service</h2>
+            <p>
+              Beside our products, our service; when you buy our meal from our
+              store or buying them online; also important and cannot be
+              neglected.
+            </p>
           </div>
         </div>
       </div>
@@ -89,11 +97,114 @@
         <div class="card-item">
           <div class="image image3"></div>
           <div class="content">
-            <h2 class="title">Ray Kroc</h2>
-            <p>This burger tastes even better than what my company makes!</p>
+            <h2 class="title">Overall performance of our store</h2>
+            <p>
+              Providing feedbacks also mean reflecting our store crew
+              performance. Feedbacks can help tracking any problems should they
+              arise in the future.
+            </p>
           </div>
         </div>
       </div>
+    </section>
+    <section class="burger-survey">
+      <h2>Please fill in your informations and feedback.</h2>
+      <form action="#">
+        <fieldset>
+          <legend>Personal Information</legend>
+          <div>
+            <label for="name">Name</label>
+            <input id="for" type="text" required />
+          </div>
+          <div>
+            <label for="address">Address</label>
+            <input id="address" type="text" required />
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input
+              id="email"
+              type="email"
+              placeholder="aaa@gmail.com"
+              required
+            />
+          </div>
+          <div>
+            <label for="phone-number">Phone Number</label>
+            <input id="phone-number" type="tel" required />
+          </div>
+          <div>
+            <label for="order-id">Order ID</label>
+            <input id="order-id" type="text" required />
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>
+            Please check what service do you have used on us before.
+          </legend>
+          <div>
+            <input
+              id="dine-in"
+              type="checkbox"
+              name="service"
+              value="dine-in"
+              checked
+            />
+            <label for="dine-in">Dine In</label>
+            <input
+              id="takeaway"
+              type="checkbox"
+              name="service"
+              value="takeaway"
+            />
+            <label for="takeaway">Takeaway</label>
+            <input
+              id="online-deliv"
+              type="checkbox"
+              name="service"
+              value="online-deliv"
+            />
+            <label for="online-deliv">Online Delivery</label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>
+            How is your overall experience with us? (Including our products and
+            service)
+          </legend>
+          <input
+            type="radio"
+            id="terrible"
+            name="feedback-rating"
+            value="terrible"
+          />
+          <label for="terrible">Terrible</label>
+          <input type="radio" id="bad" name="feedback-rating" value="bad" />
+          <label for="bad">Bad</label>
+          <input
+            type="radio"
+            id="average"
+            name="feedback-rating"
+            value="average"
+          />
+          <label for="average">Average</label>
+          <input type="radio" id="good" name="feedback-rating" value="good" />
+          <label for="good">Good</label>
+          <input
+            type="radio"
+            id="amazing"
+            name="feedback-rating"
+            value="amazing"
+          />
+          <label for="amazing">Amazing</label>
+        </fieldset>
+        <fieldset>
+          <legend>Please describe your overall experience with us.</legend>
+          <textarea cols="150" rows="30" placeholder="Write here...">
+          </textarea>
+        </fieldset>
+        <button type="submit">Submit</button>
+      </form>
     </section>
   </body>
 </html>
