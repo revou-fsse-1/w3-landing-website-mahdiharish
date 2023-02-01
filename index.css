@@ -67,3 +67,30 @@ h6 {
 #__next {
   isolation: isolate;
 }
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  overflow: hidden;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: cyan;
+}
+
+.nav-icon {
+  width: 4em;
+  height: 4em;
+}
+
+header {
+  margin: 40px;
+  padding: 50px;
+  text-align: center;
+  font-size: 30px;
+}
