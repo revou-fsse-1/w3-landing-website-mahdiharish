@@ -7,6 +7,9 @@
     <meta name="description" content="Website to show photos of things" />
     <meta name="keywords" content="HTML, CSS" />
     <meta name="author" content="Mahdi Harish Rahman" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
     <title>Madang Hamburger's Survey Page</title>
     <link rel="stylesheet" href="/index.css" />
     <link
@@ -48,7 +51,7 @@
         your review and we strive to become the best.
       </p>
     </header>
-    <section class="burger-photos">
+    <section>
       <div class="container-picture">
         <div class="item-1">
           <img src="/assets/burger-1.jpg" alt="Classic double cheeseburger" />
@@ -60,21 +63,25 @@
           <img src="/assets/burger-3.jpg" alt="Vegan burger" />
         </div>
         <div class="item-4">
-          <img src="/assets/burger-4.jpg" alt="Chicken burger" />
+          <img class="cb" src="/assets/burger-4.jpg" alt="Chicken burger" />
         </div>
         <div class="item-5">
           <img src="/assets/burger-5.jpg" alt="Our special cheeseburger!" />
         </div>
+        <div class="item-6">
+          <img src="/assets/burger-6.jpg" alt="Our special burger!" />
+        </div>
       </div>
     </section>
-    <section class="burger-reviews">
-      <h2>Why we need your feedback?</h2>
+    <section>
+      <h2 id="cont-review-title">Why we need your feedback?</h2>
+      <div class="burger-review">
       <div class="container-review">
         <div class="card-item">
           <div class="image image1"></div>
           <div class="content">
             <h2 class="title">Improving our products</h2>
-            <p>
+            <p class="text">
               We considers complaint created by customers, including any
               suggestions to improve our products. We might inspired to make new
               menu some day!
@@ -87,7 +94,7 @@
           <div class="image image2"></div>
           <div class="content">
             <h2 class="title">Improving our service</h2>
-            <p>
+            <p class="text">
               Beside our products, our service; when you buy our meal from our
               store or buying them online; also important and cannot be
               neglected.
@@ -99,14 +106,15 @@
         <div class="card-item">
           <div class="image image3"></div>
           <div class="content">
-            <h2 class="title">Overall performance of our store</h2>
-            <p>
-              Providing feedbacks also mean reflecting our store crew
+            <h2 class="title">Improving restaurant</h2>
+            <p class="text">
+              Providing feedbacks also mean reflecting our restaurant's crew
               performance. Feedbacks can help tracking any problems should they
               arise in the future.
             </p>
           </div>
         </div>
+      </div>
       </div>
     </section>
     <section class="burger-survey">
