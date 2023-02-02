@@ -170,8 +170,8 @@ header {
 }
 
 .burger-review {
-  display: flex;
-  flex-wrap: nowrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   margin-top: 10px;
   margin-bottom: 20px;
 }
@@ -263,4 +263,15 @@ form {
 .form-info input[type="checkbox"] {
   display: inline-block;
   width: auto;
+}
+button {
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 2px;
+  font-family: inherit;
+  font-size: 21px;
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
