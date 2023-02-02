@@ -7,9 +7,12 @@
     <meta name="description" content="Website to show photos of things" />
     <meta name="keywords" content="HTML, CSS" />
     <meta name="author" content="Mahdi Harish Rahman" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap"
+      rel="stylesheet"
+    />
     <title>Madang Hamburger's Survey Page</title>
     <link rel="stylesheet" href="/index.css" />
     <link
@@ -39,10 +42,9 @@
           src="/favicon_io/apple-touch-icon.png"
           alt="mh web"
       /></a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-        <a href="/index.html">Feedback</a>
-      </ul>
+      <a class="nav-links" href="#">About</a>
+      <a class="nav-links" href="#">Contact</a>
+      <a class="nav-links" href="/index.html">Feedback</a>
     </nav>
     <header class="header">
       <h1>Madang Hamburger</h1>
@@ -76,61 +78,63 @@
     <section>
       <h2 id="cont-review-title">Why we need your feedback?</h2>
       <div class="burger-review">
-      <div class="container-review">
-        <div class="card-item">
-          <div class="image image1"></div>
-          <div class="content">
-            <h2 class="title">Improving our products</h2>
-            <p class="text">
-              We considers complaint created by customers, including any
-              suggestions to improve our products. We might inspired to make new
-              menu some day!
-            </p>
+        <div class="container-review">
+          <div class="card-item">
+            <div class="image image1"></div>
+            <div class="content">
+              <h2 class="title">Improving our products</h2>
+              <p class="text">
+                We considers complaint created by customers, including any
+                suggestions to improve our products. We might inspired to make
+                new menu some day!
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="container-review">
-        <div class="card-item">
-          <div class="image image2"></div>
-          <div class="content">
-            <h2 class="title">Improving our service</h2>
-            <p class="text">
-              Beside our products, our service; when you buy our meal from our
-              store or buying them online; also important and cannot be
-              neglected.
-            </p>
+        <div class="container-review">
+          <div class="card-item">
+            <div class="image image2"></div>
+            <div class="content">
+              <h2 class="title">Improving our service</h2>
+              <p class="text">
+                Beside our products, our service; when you buy our meal from our
+                store or buying them online; also important and cannot be
+                neglected.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="container-review">
-        <div class="card-item">
-          <div class="image image3"></div>
-          <div class="content">
-            <h2 class="title">Improving restaurant</h2>
-            <p class="text">
-              Providing feedbacks also mean reflecting our restaurant's crew
-              performance. Feedbacks can help tracking any problems should they
-              arise in the future.
-            </p>
+        <div class="container-review">
+          <div class="card-item">
+            <div class="image image3"></div>
+            <div class="content">
+              <h2 class="title">Improving restaurant</h2>
+              <p class="text">
+                Providing feedbacks also mean reflecting our restaurant's crew
+                performance. Feedbacks can help tracking any problems should
+                they arise in the future.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
       </div>
     </section>
     <section class="burger-survey">
-      <h2>Please fill in your informations and feedback.</h2>
-      <form action="#">
+      <h2 class="survey-title">
+        Please fill in your informations and feedback.
+      </h2>
+      <form method="post" action="#">
         <fieldset>
           <legend>Personal Information</legend>
-          <div>
+          <div class="form-info">
             <label for="name">Name</label>
             <input id="for" type="text" required />
           </div>
-          <div>
+          <div class="form-info">
             <label for="address">Address</label>
             <input id="address" type="text" required />
           </div>
-          <div>
+          <div class="form-info">
             <label for="email">Email</label>
             <input
               id="email"
@@ -139,11 +143,11 @@
               required
             />
           </div>
-          <div>
+          <div class="form-info">
             <label for="phone-number">Phone Number</label>
             <input id="phone-number" type="tel" required />
           </div>
-          <div>
+          <div class="form-info">
             <label for="order-id">Order ID</label>
             <input id="order-id" type="text" required />
           </div>
@@ -152,7 +156,7 @@
           <legend>
             Please check what service do you have used on us before.
           </legend>
-          <div>
+          <div class="form-info">
             <input
               id="dine-in"
               type="checkbox"
@@ -182,38 +186,39 @@
             How is your overall experience with us? (Including our products and
             service)
           </legend>
-          <input
-            type="radio"
-            id="terrible"
-            name="feedback-rating"
-            value="terrible"
-          />
-          <label for="terrible">Terrible</label>
-          <input type="radio" id="bad" name="feedback-rating" value="bad" />
-          <label for="bad">Bad</label>
-          <input
-            type="radio"
-            id="average"
-            name="feedback-rating"
-            value="average"
-          />
-          <label for="average">Average</label>
-          <input type="radio" id="good" name="feedback-rating" value="good" />
-          <label for="good">Good</label>
-          <input
-            type="radio"
-            id="amazing"
-            name="feedback-rating"
-            value="amazing"
-          />
-          <label for="amazing">Amazing</label>
+          <div class="form-info">
+            <input
+              type="radio"
+              id="terrible"
+              name="feedback-rating"
+              value="terrible"
+            />
+            <label for="terrible">Terrible</label>
+            <input type="radio" id="bad" name="feedback-rating" value="bad" />
+            <label for="bad">Bad</label>
+            <input
+              type="radio"
+              id="average"
+              name="feedback-rating"
+              value="average"
+            />
+            <label for="average">Average</label>
+            <input type="radio" id="good" name="feedback-rating" value="good" />
+            <label for="good">Good</label>
+            <input
+              type="radio"
+              id="amazing"
+              name="feedback-rating"
+              value="amazing"
+            />
+            <label for="amazing">Amazing</label>
+          </div>
         </fieldset>
         <fieldset>
           <legend>Please describe your overall experience with us.</legend>
-          <textarea cols="150" rows="30" placeholder="Write here...">
-          </textarea>
+          <textarea cols="50" rows="10" placeholder="Write here..."> </textarea>
+          <button type="submit" value="submit">Submit</button>
         </fieldset>
-        <button type="submit">Submit</button>
       </form>
     </section>
   </body>
