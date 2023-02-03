@@ -141,6 +141,36 @@ header {
   grid-column-end: 9;
   grid-row-start: 1;
   grid-row-end: 6;
+  position: relative;
+  overflow: hidden;
+}
+
+.best-seller {
+  position: absolute;
+  display: inline-block;
+  top: 0.2em;
+  right: 0.8em;
+  max-width: 5em;
+  color: #fce22a;
+  z-index: 1;
+  text-align: center;
+}
+
+.best-seller::after {
+  position: absolute;
+  top: -1.5em;
+  right: -6em;
+  content: "";
+  height: 5em;
+  width: 15em;
+  transform: rotatez(45deg);
+  background-color: #d61355;
+  z-index: -1;
+}
+
+.prod-tagline {
+  text-align: end;
+  font-size: 17px;
 }
 
 .item-4 {
