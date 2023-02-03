@@ -84,6 +84,7 @@ nav {
   font-size: 20px;
   font-weight: bold;
   background-color: #d61355;
+  z-index: 1;
 }
 
 .nav-links {
@@ -301,6 +302,7 @@ form {
   display: inline-block;
   width: auto;
 }
+
 button {
   background-color: white;
   border: 1px solid black;
